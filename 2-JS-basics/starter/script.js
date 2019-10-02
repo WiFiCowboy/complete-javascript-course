@@ -216,52 +216,105 @@ console.log(firstName + ' ' + lastName);
  * The Ternary operator and switch statments
  */
 
- var firstName = 'John';
- var age = 22;
+//  var firstName = 'John';
+//  var age = 22;
 
- // Ternary operator
- age >= 18 ? console.log(`${firstName} drinks Beer.`) : console.log(`${firstName} drinks Juice.`);
+//  // Ternary operator
+//  age >= 18 ? console.log(`${firstName} drinks Beer.`) : console.log(`${firstName} drinks Juice.`);
  
- var drink = age >= 18 ? 'Beer' : 'Juice';
- console.log(drink);
+//  var drink = age >= 18 ? 'Beer' : 'Juice';
+//  console.log(drink);
 
- /*
- if (age >= 18){
-    var drink = 'Beer';
- } else {
-    var drink = 'Juice';
- }
- */
+//  /*
+//  if (age >= 18){
+//     var drink = 'Beer';
+//  } else {
+//     var drink = 'Juice';
+//  }
+//  */
 
 //  Switch statment
-var job = 'instructor';
-switch (job) {
-  case 'teacher':
-  case 'instructor':
-      console.log(`${firstName} teaches kids how to code.`);
-      break;
-  case 'driver':
-      console.log(`${firstName} drives an Uber in Lisbon.`);
-      break;
-  case 'designer':
-      console.log(`${firstName} designs beautiful websites.`);   
-      break;
-  default:
-        console.log(`${firstName} does something else.`);
+// var job = 'instructor';
+// switch (job) {
+//   case 'teacher':
+//   case 'instructor':
+//       console.log(`${firstName} teaches kids how to code.`);
+//       break;
+//   case 'driver':
+//       console.log(`${firstName} drives an Uber in Lisbon.`);
+//       break;
+//   case 'designer':
+//       console.log(`${firstName} designs beautiful websites.`);   
+//       break;
+//   default:
+//         console.log(`${firstName} does something else.`);
         
-}
+// }
 
-switch (true) {
-  case age < 13:
-      console.log(`${firstName} is a boy.`);
-      break;
-  case age >= 13 && age < 20:
-      console.log(`${firstName} is a teenager.`); 
-      break;
-  case age >= 20 && age < 30:
-      console.log(`${firstName} is a young man.`);
-      break;
-  default:
-      console.log(`${firstName} is a man.`); 
-}
+// switch (true) {
+//   case age < 13:
+//       console.log(`${firstName} is a boy.`);
+//       break;
+//   case age >= 13 && age < 20:
+//       console.log(`${firstName} is a teenager.`); 
+//       break;
+//   case age >= 20 && age < 30:
+//       console.log(`${firstName} is a young man.`);
+//       break;
+//   default:
+//       console.log(`${firstName} is a man.`); 
+// }
 
+/*******************************
+ * Truthy and falsy values and equality operators
+ */
+
+// //  falsy values: undefined, null, 0, '', NaN
+// // truthy values: NOT falsy values
+
+// var height;
+
+// height = 23;
+
+// if (height || height === 0) {
+//   console.log(`Varible is defined`);
+// } else {
+//   console.log(`Varible has not been defined`);
+// }
+
+// // Equality operators
+// if (height == '23'){
+//   console.log('The == operator does type coercion!') 
+// }
+
+/*****************************
+ * Coding Challenge 2
+ */
+
+ /*
+  John and Mike both play basketball in diffrent teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
+
+  1. Calculate the average score for each team
+  2. Decide which teams wins in average (highest average score), and print the winner to the console.
+  3. then change the scores to show diffrent winners. Don't forget to take into account there might be a draw (the same average score)
+
+  4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
+  5. Like before, change the scores to genrate diffrent winners, keeping in mind there might be draws.
+
+  GOOD LUCK!
+  */
+
+var johnAverage, mikeAverage, maryAverage
+johnAverage = (89 + 120 + 103) / 3;
+mikeAverage = (103 + 95 + 105) / 3;
+maryAverage = (97 + 134 + 105) / 3;
+
+if (johnAverage > mikeAverage && johnAverage > maryAverage){
+  console.log(`The Winner is John with a score of ${johnAverage}!`);
+} else if (mikeAverage > johnAverage && mikeAverage > maryAverage){
+  console.log(`The Winner is Mike with a score of ${mikeAverage}!`);
+} else if (maryAverage > johnAverage && maryAverage > mikeAverage){
+  console.log(`The Winner is Mary with a score of ${maryAverage}!`);
+} else{
+  console.log(`It's a tie`);
+}
