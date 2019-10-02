@@ -157,9 +157,111 @@ console.log(firstName + ' ' + lastName);
 //  var greaterBMI = markBMI > johnBMI;
 // console.log(`Is Mark's BMI higher than John's? ${greaterBMI}`);
 
+/***********************
+ * If / else statements
+ */
 
 
+//  var firstName = 'John';
+//  var civilStatus = 'single';
+
+//  if (civilStatus === 'married'){
+//    console.log(`${firstName} is married!`);   
+//  } else {
+//    console.log(`${firstName} is single!`);
+//  }
+
+// var isMarried = true;
+// if (isMarried){
+//   console.log(`${firstName} is married!`);   
+// } else {
+//   console.log(`${firstName} is single!`);
+// }
 
 
+// var markHeight, johnHeight, markMass, johnMass;
+// markHeight = 1.8;
+// johnHeight = 2;
+// markMass = 90;
+// johnMass = 86;
 
+// var markBMI = markMass / (markHeight * markHeight);
+// var johnBMI = johnMass / (johnHeight * johnHeight);
+
+// if (markBMI > johnBMI){
+//   console.log(`Mark's BMI is higher than John's`);
+// } else {
+//   console.log(`John's BMI is higher than Mark's`);
+// }
+
+/************************
+ * Boolean Logic
+ */
+
+//  var firstName = 'John';
+//  var age = prompt(`what is your age ${firstName}!`);
+
+//  if (age < 13){
+//    console.log(`${firstName} is a boy.`);
+//   } else if (age >= 13 && age < 20) { // Between 13 and 20
+//     console.log(`${firstName} is a teenager.`); 
+//   } else if (age >= 20 && age < 30) { // Between 13 and 20
+//     console.log(`${firstName} is a young man.`); 
+//   }
+//   else {
+//    console.log(`${firstName} is a man.`); 
+//   }
+
+/*************************
+ * The Ternary operator and switch statments
+ */
+
+ var firstName = 'John';
+ var age = 22;
+
+ // Ternary operator
+ age >= 18 ? console.log(`${firstName} drinks Beer.`) : console.log(`${firstName} drinks Juice.`);
+ 
+ var drink = age >= 18 ? 'Beer' : 'Juice';
+ console.log(drink);
+
+ /*
+ if (age >= 18){
+    var drink = 'Beer';
+ } else {
+    var drink = 'Juice';
+ }
+ */
+
+//  Switch statment
+var job = 'instructor';
+switch (job) {
+  case 'teacher':
+  case 'instructor':
+      console.log(`${firstName} teaches kids how to code.`);
+      break;
+  case 'driver':
+      console.log(`${firstName} drives an Uber in Lisbon.`);
+      break;
+  case 'designer':
+      console.log(`${firstName} designs beautiful websites.`);   
+      break;
+  default:
+        console.log(`${firstName} does something else.`);
+        
+}
+
+switch (true) {
+  case age < 13:
+      console.log(`${firstName} is a boy.`);
+      break;
+  case age >= 13 && age < 20:
+      console.log(`${firstName} is a teenager.`); 
+      break;
+  case age >= 20 && age < 30:
+      console.log(`${firstName} is a young man.`);
+      break;
+  default:
+      console.log(`${firstName} is a man.`); 
+}
 
