@@ -144,18 +144,19 @@ console.log(firstName + ' ' + lastName);
 
  */
 
- var markHeight, johnHeight, markMass, johnMass;
- markHeight = 1.8288;
- johnHeight = 2.01168;
- markMass = 90.7185;
- johnMass = 86.1826;
+//  var markHeight, johnHeight, markMass, johnMass;
+//  markHeight = 1.8288;
+//  johnHeight = 2.01168;
+//  markMass = 90.7185;
+//  johnMass = 86.1826;
 
- var markBMI = markMass / (markHeight * markHeight);
- var johnBMI = johnMass / (johnHeight * johnHeight);
-console.log(markBMI, johnBMI);
+//  var markBMI = markMass / (markHeight * markHeight);
+//  var johnBMI = johnMass / (johnHeight * johnHeight);
+// console.log(markBMI, johnBMI);
 
- var greaterBMI = markBMI > johnBMI;
-console.log(`Is Mark's BMI higher than John's? ${greaterBMI}`);
+//  var greaterBMI = markBMI > johnBMI;
+// console.log(`Is Mark's BMI higher than John's? ${greaterBMI}`);
+
 
 
 
