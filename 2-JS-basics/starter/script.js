@@ -352,24 +352,59 @@ console.log(firstName + ' ' + lastName);
  *Function statements and expressions
  */
 
-// Function declaration
-// function whatDoYouDo(job, firstName){}
+// // Function declaration
+// // function whatDoYouDo(job, firstName){}
 
-// Function experssion
-var whatDoYouDo = function(job, firstName) {
-    switch(job) {
-        case 'teacher':
-            return `${firstName} teaches kids how to code.`;
-        case 'driver':
-            return `${firstName} drives a cab in Lisbon.`;
-        case 'designer':
-            return `${firstName} designs beautiful websites.`
-        default:
-          return `${firstName} does something else.`
-    }
-}
+// // Function experssion
+// var whatDoYouDo = function(job, firstName) {
+//     switch(job) {
+//         case 'teacher':
+//             return `${firstName} teaches kids how to code.`;
+//         case 'driver':
+//             return `${firstName} drives a cab in Lisbon.`;
+//         case 'designer':
+//             return `${firstName} designs beautiful websites.`
+//         default:
+//           return `${firstName} does something else.`
+//     }
+// }
 
-console.log(whatDoYouDo('teacher', 'John'));
-console.log(whatDoYouDo('driver', 'John'));
-console.log(whatDoYouDo('designer', 'John'));
-console.log(whatDoYouDo('tech', 'John'));
+// console.log(whatDoYouDo('teacher', 'John'));
+// console.log(whatDoYouDo('driver', 'John'));
+// console.log(whatDoYouDo('designer', 'John'));
+// console.log(whatDoYouDo('tech', 'John'));
+
+/**************************
+ * Arrays
+ */
+
+// // Intialize new array
+//  var names = ['John', 'Mark', 'Jane'];
+//  var years = new Array(1990, 1969, 1948);
+
+//  console.log(names[2]);
+//  console.log(names.length);
+
+// //  Mutate array data
+//  names[1] = 'Ben';
+//  names[names.length] = 'Mary';
+//  console.log(names);
+
+// //  Diffrent data types
+// var john = ['John', 'Smith', 1990, 'designer', false];
+
+// john.push('blue');
+// john.unshift('Mr.');
+// console.log(john);
+ 
+// john.pop();
+// john.pop();
+// john.shift();
+// console.log(john);
+
+// console.log(john.indexOf(23));
+
+// var isDesigner = john.indexOf('designer') === -1 ? `${names[0]} is NOT a desinger` : `${names[0]} IS a desinger`;
+// console.log(isDesigner);
+
+
