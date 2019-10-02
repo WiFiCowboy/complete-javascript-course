@@ -304,17 +304,50 @@ console.log(firstName + ' ' + lastName);
   GOOD LUCK!
   */
 
-var johnAverage, mikeAverage, maryAverage
-johnAverage = (89 + 120 + 103) / 3;
-mikeAverage = (103 + 95 + 105) / 3;
-maryAverage = (97 + 134 + 105) / 3;
+// var johnAverage, mikeAverage, maryAverage
+// johnAverage = (89 + 120 + 103) / 3;
+// mikeAverage = (103 + 95 + 105) / 3;
+// maryAverage = (97 + 134 + 105) / 3;
 
-if (johnAverage > mikeAverage && johnAverage > maryAverage){
-  console.log(`The Winner is John with a score of ${johnAverage}!`);
-} else if (mikeAverage > johnAverage && mikeAverage > maryAverage){
-  console.log(`The Winner is Mike with a score of ${mikeAverage}!`);
-} else if (maryAverage > johnAverage && maryAverage > mikeAverage){
-  console.log(`The Winner is Mary with a score of ${maryAverage}!`);
-} else{
-  console.log(`It's a tie`);
-}
+// if (johnAverage > mikeAverage && johnAverage > maryAverage){
+//   console.log(`The Winner is John with a score of ${johnAverage}!`);
+// } else if (mikeAverage > johnAverage && mikeAverage > maryAverage){
+//   console.log(`The Winner is Mike with a score of ${mikeAverage}!`);
+// } else if (maryAverage > johnAverage && maryAverage > mikeAverage){
+//   console.log(`The Winner is Mary with a score of ${maryAverage}!`);
+// } else{
+//   console.log(`It's a tie`);
+// }
+
+/*****************************
+ * Functions
+ */
+
+//  function calculateAge(birthYear) {
+//    return 2019 - birthYear;
+//  }
+
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
+// var ageJane = calculateAge(1969);
+
+// console.log(ageJohn, ageMike, ageJane);
+
+
+// function yearsUntilRetirement(year, firstName) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
+
+//   if (retirement > 0){
+//   console.log(`${firstName} retires in ${retirement}  years.`);
+// } else {
+//     console.log(`${firstName} is already retired!`);  
+// }
+// }
+// yearsUntilRetirement(1990, 'John');
+// yearsUntilRetirement(1948, 'Mike');
+// yearsUntilRetirement(1969, 'Jane');
+
+/******************************
+ *Function statements and expressions
+ */
