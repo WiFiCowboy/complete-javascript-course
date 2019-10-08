@@ -423,23 +423,154 @@ In the end, John would like to have 2 arrays:
 
 (NOTE: To calculate 20% of value, simply multiply if with 20/100 = 0.2)
 */ 
-var bills = [124, 48, 268];
-var tips = [];
-var totalBill = [];
+// var bills = [124, 48, 268];
+// var tips = [];
+// var totalBill = [];
 
-function tipCalculator(amount){
-    if (amount < 50){
-      tips.unshift(amount * .2);
-      totalBill.unshift(amount + (amount * .2)); 
-    } else if (amount >= 50 && amount < 200){
-      tips.unshift(amount * .15);
-      totalBill.unshift(amount + (amount * .15)); 
-    } else {
-      tips.unshift(amount * .1);
-      totalBill.unshift(amount + (amount * .1)); 
-    }
-}
+// function tipCalculator(amount){
+//     if (amount < 50){
+//       tips.unshift(amount * .2);
+//       totalBill.unshift(amount + (amount * .2)); 
+//     } else if (amount >= 50 && amount < 200){
+//       tips.unshift(amount * .15);
+//       totalBill.unshift(amount + (amount * .15)); 
+//     } else {
+//       tips.unshift(amount * .1);
+//       totalBill.unshift(amount + (amount * .1)); 
+//     }
+// }
 
-tipCalculator(124);
-tipCalculator(48);
-tipCalculator(268);
+// tipCalculator(124);
+// tipCalculator(48);
+// tipCalculator(268);
+// console.log(tips);
+// console.log(totalBill);
+
+/**************************
+ * Objects and Properties
+ */
+
+// //  Object literal
+//  var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false
+//  };
+
+//  console.log(john.firstName);
+//  console.log(john['lastName']);
+//  var x = 'birthYear';
+//  console.log(john[x]);
+
+//  john.job = 'designer';
+//  john['isMarried'] = true;
+//  console.log(john);
+ 
+// //  new Object syntax
+//  var jane = new Object();
+//  jane.name = 'jane';
+//  jane.birthYear = 1969;
+//  jane['lastName'] = 'Smith';
+//  console.log(jane);
+
+ /**************************
+  * Objects and methods
+  */
+ 
+//    var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1992,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false,
+//     calcAge: function(birthYear){
+//       this.age = 2018 - this.birthYear;
+//     }
+//  };
+ 
+// john.calcAge();
+// console.log(john);
+
+/*****************************
+ * Coding Challenge 4
+ */
+
+ /*
+ Let's remember the first coding challenge where Mark and John compared their BMI's. Let's now implement the same functionality with objects and methods.
+ 1. For each of them, create an object with properties for their full name, mass, and height
+ 2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
+ 3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.
+
+ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+ */
+
+// var markHeight, johnHeight, markMass, johnMass;
+//  markHeight = 1.8288;
+//  johnHeight = 2.01168;
+//  markMass = 90.7185;
+//  johnMass = 86.1826;
+
+//  var john = {
+//    firstName: 'John',
+//    lastName: 'Smith',
+//    height: 2.01,
+//    mass: 86.18,
+//    calcBMI: function(){
+//     this.BMI = this.mass / (this.height * this.height);
+//     return this.BMI;
+//    }
+//  };
+
+//  var mark = {
+//    firstName: 'Mark',
+//    lastName: 'Alpha',
+//    height: 1.82,
+//    mass: 90.71,
+//    calcBMI: function(){
+//     this.BMI = this.mass / (this.height * this.height);
+//     return this.BMI;
+//    }
+//  };
+
+
+// function biggerBMI(john, mark){
+//   if(john.calcBMI() > mark.calcBMI()){
+//     console.log(`${john.firstName} ${john.lastName} has a bigger BMI of ${john.BMI}`); 
+//   } else if (john.BMI < mark.BMI){
+//     console.log(`${mark.firstName} ${mark.lastName} has a bigger BMI of ${mark.BMI}`);
+//   } else {
+//     console.log(`They both have the same BMI`);
+    
+//   }
+// }
+
+// biggerBMI(john, mark);
+// console.log(john, mark);
+
+/**************************
+ * Loops and iteration
+ */
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
